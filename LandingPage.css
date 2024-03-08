@@ -1,0 +1,193 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    color: goldenrod;
+}
+body{
+    background-color: black;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: goldenrod;
+    height: 5rem;
+}
+.heading{
+    margin: 10px;
+    font-family: "Allison";
+}
+.heading h1{
+    margin-left: 20px;
+}
+.NavBar .nav_links ul{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.NavBar .nav_links ul li{
+    font-size: 20px;
+    list-style: none;
+    margin: auto 3rem;
+}
+.NavBar .nav_links ul li a:hover{
+    color: rgb(139, 161, 195);
+}
+
+.main .content .head-page{
+    background-image: url(Photos/top-view-food-frame-with-copy-space.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+.main .content .head-page .page{
+    margin-top: 18rem;
+    float: inline-end;
+}
+.main .content .head-page .page h2 {
+    font-size: 60px;
+    color: rgb(218, 185, 102);
+}
+.main .content .head-page .page p {
+    font-size: 30px;
+    color: rgb(218, 185, 102);
+}
+.main .content .head-page .page button{
+    padding: 15px 25px;
+    background-color: black;
+    border-radius: 50px;
+    color: goldenrod;
+}
+.main .content .head-page .page button:hover{
+    background-color: goldenrod;
+    color: black;
+}
+
+/* our special order */
+.special h1{
+    text-align: center;
+    margin: 30px 0;
+}
+.special .special-con{
+    display: flex;
+    justify-content: space-around;
+}
+.special-con img{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px
+}
+.special-con .dish{
+    border: 0px solid goldenrod;
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: rgb(29, 28, 28);
+    text-align: center;
+    cursor: pointer;
+}
+.special-con .dish:hover{
+    background-color: rgb(13, 13, 13);
+    
+}
+.special .special-con h4{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* banner */
+.banner{
+    margin-top: 10px;
+    background-image: url(Photos/istockphoto-1227198304-1024x1024.jpg);
+    height: 200px;
+    
+}
+.banner h1{
+    font-family: "Allison";
+    text-align: center;
+    font-size: 180px;
+    font-weight: 700;
+    text-shadow: 3px 2px black;
+
+}
+
+
+
+/* footer */
+.footer{
+    margin-top: 30px;
+    border-top: 2px solid goldenrod;
+    height: 200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer .Foothead{
+    text-align: center;
+    margin-left: 80px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+.footer .servise{
+    margin-right: 80px;
+    font-size: 15px;
+}
+li{
+    list-style: none;
+    margin: 10px auto;
+}
+/* apply media query */
+@media screen and (max-width: 640px) {
+    .special{
+        justify-content: center;
+    }
+    .special .special-con,.footer{
+        flex-direction: column;
+    }
+    .special li, .footer li{
+        margin: 20px auto;
+    }
+    .special .special-con .dish{
+        margin: 10px auto;
+    }
+    .banner h1{
+        font-size: 70px;
+    }
+    .footer .servise{
+        display: block;
+        float: none;
+        margin: 10px auto;
+    }
+    li{
+        display: block;
+        text-align: left;
+    }
+}
